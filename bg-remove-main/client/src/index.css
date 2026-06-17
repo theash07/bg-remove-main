@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Set the default font globally */
+* {
+  font-family: Outfit, sans-serif;
+}
+
+/* Apply the background color and text color globally */
+body {
+  background-color: #fcfcfc; /* Page background color */
+  color: #333; /* Text color for good contrast */
+  margin: 0;
+  padding: 0;
+  font-family: Outfit, sans-serif; /* Ensure the font is applied globally */
+}
+
+/* Slider styling */
+.slider {
+  -webkit-appearance: none;
+  height: 100%;
+  background: transparent;
+}
+
+/* Styling for the slider thumb */
+.slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 30px;
+  min-height: 30px;
+  background-image: url(/slide_icon.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Layered background */
+.bg-layer {
+  background-image: url(/bg_layer.png);
+}
